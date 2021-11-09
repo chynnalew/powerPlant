@@ -38,6 +38,18 @@ module.exports = {
         ]
       },
       {
+        test: /\.(oog|mp3|wav)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: 'assets/'
+            }
+          }
+        ]
+      },
+      {
         test:/\.html$/, 
         use: [
           'html-loader'

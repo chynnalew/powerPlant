@@ -1,8 +1,8 @@
-# (Application Name)
+# Power Plant
 
-#### (Brief Description of Application)
+#### Feed your plants friends
 
-#### By (Your Name Here)
+#### By Chynna Lew & Diego Serafico
 
 ## Technologies Used
 
@@ -11,21 +11,27 @@
 * _you used in your project_
 * _here_
 
+* JavaScript
+* NPM
+* Jest
+* Webpack
+
 ## Description
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* npm install
+* npm build
+* npm run start
+
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+nope
 
 ## License
+MIT
 
 ## Contact Information
+github.com/chynnalew
+github.com/DiegoSerafico

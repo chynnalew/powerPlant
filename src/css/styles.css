@@ -1,0 +1,12 @@
+body{
+  margin-top: 20px;
+}
+
+img{
+  height: 300px;
+  width: auto;
+}
+
+#dead, #dude{
+  display:none;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+    crossorigin="anonymous"></script>
+    <script type="text/javascript" src="plant.js"></script>
+    <title>Grow Your Plant</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card" id="timerDisplay">
+        <p id="seconds"><span id="secondsUpdate"></span> seconds</p>
+      </div>
+      <div class="grow-buttons">
+        <button class="btn-success" id="feed">Add soil</button>
+        <button class="btn-success" id="water">Add Water</button>
+        <button class="btn-success" id="light">Add light</button>
+        <button class="btn-success" id="show-state">Current Stats</button>
+      </div>
+      <img src="/powerPlant/assets/images/happy.gif" alt="" id="happy">
+      <img src="/powerPlant/assets/images/dead.gif" alt="" id="dead">
+      <h1>Your Plant's Values</h1>
+      <div id="plants">
+        <h3><div id="soil-value">0</div></h3>
+        <h3><div id="water-value">0</div></h3>
+        <h3><div id="light-value">0</div></h3>
+      </div>
+      <img src="/powerPlant/assets/images/you-suck-jackass.gif" alt="" id="dude">
+    </div>
+  <script type="text/javascript" src="/powerPlant/bundle.js"></script></body>
+</html>

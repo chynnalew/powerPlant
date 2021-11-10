@@ -12,7 +12,7 @@ function timer() {
   $("#secondsUpdate").html(secondsPassed);
 }
 
-let hurtEm = setInterval(hurtPlant, 5000);
+let hurtEm = setInterval(hurtPlant, 3000);
 
 function hurtPlant() {
   const newState = stateControl();
@@ -41,7 +41,7 @@ $(document).ready(function () {
     $('#feed').attr('disabled', 'disabled').attr('style', 'background-color:red');
     const newState = stateControl(blueFood);
     $('#soil-value').text(`Soil: ${newState.soil}`);
-    const feedInt = setInterval(feedTime, 7000);
+    const feedInt = setInterval(feedTime, 5000);
     function feedTime() {
       $('#feed').removeAttr('disabled').removeAttr('style', 'background-color:red');
       clearInterval(feedInt);
@@ -52,7 +52,7 @@ $(document).ready(function () {
     $('#water').attr('disabled', 'disabled').attr('style', 'background-color:red');
     const newState = stateControl(hydrate);
     $('#water-value').text(`Hydration: ${newState.water}`);
-    const waterInt = setInterval(waterTime, 7000);
+    const waterInt = setInterval(waterTime, 5000);
     function waterTime() {
       $('#water').removeAttr('disabled').removeAttr('style', 'background-color:red');
       clearInterval(waterInt);
@@ -63,7 +63,7 @@ $(document).ready(function () {
     $('#light').attr('disabled', 'disabled').attr('style', 'background-color:red');
     const newState = stateControl(lightItUp);
     $('#light-value').text(`Mood: ${newState.light}`);
-    const lightInt = setInterval(lightTime, 7000);
+    const lightInt = setInterval(lightTime, 5000);
     function lightTime() {
       $('#light').removeAttr('disabled').removeAttr('style', 'background-color:red');
       clearInterval(lightInt);

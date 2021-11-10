@@ -38,18 +38,36 @@ function hurtPlant() {
 $(document).ready(function () {
   
   $('#feed').click(function () {
+    $('#feed').attr('disabled', 'disabled').attr('style', 'background-color:red');
     const newState = stateControl(blueFood);
     $('#soil-value').text(`Soil: ${newState.soil}`);
+    const feedInt = setInterval(feedTime, 7000);
+    function feedTime() {
+      $('#feed').removeAttr('disabled').removeAttr('style', 'background-color:red');
+      clearInterval(feedInt);
+    }
   });
 
-  $('#water').click(function() {
+  $('#water').click(function () {
+    $('#water').attr('disabled', 'disabled').attr('style', 'background-color:red');
     const newState = stateControl(hydrate);
     $('#water-value').text(`Hydration: ${newState.water}`);
+    const waterInt = setInterval(waterTime, 7000);
+    function waterTime() {
+      $('#water').removeAttr('disabled').removeAttr('style', 'background-color:red');
+      clearInterval(waterInt);
+    }
   });
 
-  $('#light').click(function() {
+  $('#light').click(function () {
+    $('#light').attr('disabled', 'disabled').attr('style', 'background-color:red');
     const newState = stateControl(lightItUp);
     $('#light-value').text(`Mood: ${newState.light}`);
+    const lightInt = setInterval(lightTime, 7000);
+    function lightTime() {
+      $('#light').removeAttr('disabled').removeAttr('style', 'background-color:red');
+      clearInterval(lightInt);
+    }
   });
   
   // This function doesn't actually do anything useful in this application - it just demonstrates how we can "look" at the current state (which the DOM is holding anyway). However, students often do need the ability to see the current state without changing it so it's included here for reference.

@@ -27,11 +27,11 @@ export const changeState = (prop) => {
 export const feed = changeState("soil")(1);
 export const blueFood = changeState("soil")(5);
 
-export const hydrate = changeState("water")(1);
+export const hydrate = changeState("water")(3);
 export const superWater = changeState("water")(5);
 
 export const lightItUp = changeState("light")(2);
 
-export const negFeed = changeState("soil")(-5);
+export const negFeed = changeState("soil")(-1);
 export const dryItUp = changeState("water")(-1);
 export const darknessFalls = changeState("light")(-1);
